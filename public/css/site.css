@@ -13,7 +13,7 @@ h1{font-size:clamp(2.3rem,6vw,4.2rem);font-weight:800}h2{font-size:clamp(1.8rem,
 /* header */
 .top{position:sticky;top:0;z-index:50;background:rgba(23,19,15,.96);color:#fff;backdrop-filter:blur(6px)}
 .top-in{max-width:1240px;margin:auto;padding:8px 20px;display:flex;align-items:center;gap:20px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 1.35rem Fraunces,serif;line-height:1}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:800 1.35rem Fraunces,serif;line-height:1}
 .brand small{display:block;font:500 .62rem Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-top:3px}
 .nav{margin-left:auto;display:flex;gap:26px}.nav a{text-decoration:none;font-weight:500;font-size:.95rem;opacity:.9}.nav a:hover{color:var(--gold2)}
 .top-cta{display:flex;align-items:center;gap:14px}

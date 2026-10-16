@@ -1,0 +1,20 @@
+:root{--ink:#17130f;--cream:#f4ede0;--gold:#b98530;--line:#ddd2bd;--card:#fffdf8}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--cream);color:var(--ink)}
+.bar{background:var(--ink);color:#fff}.bar-in{max-width:1000px;margin:auto;padding:10px 16px;display:flex;align-items:center;gap:12px}
+.sp{flex:1}.link{background:none;border:0;color:#e8c98a;cursor:pointer;font:inherit;text-decoration:underline;padding:0}
+.wrap{max-width:1000px;margin:auto;padding:16px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.tab{border:1px solid var(--line);background:var(--card);padding:7px 14px;border-radius:99px;cursor:pointer;font:inherit}
+.tab[aria-selected=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.lead{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.lead h3{margin:0 0 2px;font-size:17px}.meta{color:#6b6153;font-size:13px}.msg{margin:10px 0;white-space:pre-wrap}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-start;margin-top:10px}
+select,textarea,input{font:inherit;padding:8px;border:1px solid var(--line);border-radius:6px;background:#fff}
+textarea{flex:1;min-width:220px;min-height:60px}
+.btn{background:var(--gold);color:#fff;border:0;border-radius:6px;padding:9px 16px;font:inherit;font-weight:600;cursor:pointer}
+.btn.ghost{background:none;color:#a33;border:1px solid #d9b6b6}
+.pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:12px;background:#eadfc6;margin-left:6px;text-transform:capitalize}
+.pill.new{background:#f6d58a}.pill.won{background:#bfe3c0}.pill.lost{background:#e2d3d3}
+.muted{color:#6b6153}
+.login{display:grid;place-items:center;min-height:100vh}.card{background:var(--card);padding:28px;border-radius:12px;border:1px solid var(--line);width:min(360px,92vw);display:grid;gap:12px;text-align:center}
+.card label{display:grid;gap:4px;text-align:left;font-weight:600}.card h1{margin:0;font-size:20px}.card img{margin:auto}.err{color:#a33;margin:0}

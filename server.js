@@ -36,6 +36,12 @@ app.use(session({
 
 app.use(require('./routes/public'));
 app.use(require('./routes/admin'));
+// Serve the home page with absolute URLs (needed for og:image / canonical). Set SITE_URL, e.g. https://mccauleystoneworks.com
+const homeHtml = fs.readFileSync(path.join(__dirname, 'public', 'index.html'), 'utf8');
+app.get(['/', '/index.html'], (req, res) => {
+  const base = (process.env.SITE_URL || `${req.protocol}://${req.get('host')}`).replace(/\/$/, '');
+  res.type('html').send(homeHtml.replace(/__SITE_URL__/g, base));
+});
 app.use(express.static(path.join(__dirname, 'public'), { maxAge: '7d', extensions: ['html'] }));
 app.use((req, res) => res.status(404).sendFile(path.join(__dirname, 'public', '404.html')));
 
